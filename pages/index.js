@@ -5,6 +5,7 @@ import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 import QuizBackground from '../src/components/QuizBackground'
 import QuizLogo from '../src/components/QuizLogo'
+import Head from '../src/components/Head'
 
 const Title = styled.h1`
   font-size: 50px;
@@ -24,40 +25,43 @@ const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <QuizLogo />
+    <>
+      <Head />
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <QuizLogo />
 
-        <Widget>
-          <Widget.Header>
-            <h1>Questão 1:</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>Let e Const são palavras reservadas do Javascript?</p>
-          </Widget.Content>
-        </Widget>
+          <Widget>
+            <Widget.Header>
+              <h1>Questão 1:</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>Let e Const são palavras reservadas do Javascript?</p>
+            </Widget.Content>
+          </Widget>
 
-        <Widget>
-          <Widget.Header>
-            <h1>Questão 2:</h1>
-          </Widget.Header>
-          <Widget.Content> 
-            <p>Para que serve método querySelectorAll?</p>
-          </Widget.Content>
-        </Widget>
+          <Widget>
+            <Widget.Header>
+              <h1>Questão 2:</h1>
+            </Widget.Header>
+            <Widget.Content> 
+              <p>Para que serve método querySelectorAll?</p>
+            </Widget.Content>
+          </Widget>
 
-        <Widget>
-          <Widget.Header>
-            <h1>Questão 3:</h1>
-          </Widget.Header>
-          <Widget.Content> 
-            <p>Qual o propósito de método map?</p>
-          </Widget.Content>
-        </Widget>
+          <Widget>
+            <Widget.Header>
+              <h1>Questão 3:</h1>
+            </Widget.Header>
+            <Widget.Content> 
+              <p>Qual o propósito de método map?</p>
+            </Widget.Content>
+          </Widget>
 
-      </QuizContainer>
-      <Footer />
-      <GitHubCorner  projectUrl="https://github.com/leoomelo" />
-    </QuizBackground>
+        </QuizContainer>
+        <Footer />
+        <GitHubCorner  projectUrl="https://github.com/leoomelo" />
+      </QuizBackground>
+    </>
   )
 }
