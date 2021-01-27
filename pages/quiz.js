@@ -1,11 +1,10 @@
-import db from '../db.json'
-import Home from './index'
-
+/* eslint-disable react/react-in-jsx-scope */
 function Quiz() {
-    return (
-        <Home />
-    )
+  return (
+    <div>
+      Como se consegue aprender desse jeito?
+    </div>
+  );
 }
 
-export default Quiz
-
+export default Quiz;
