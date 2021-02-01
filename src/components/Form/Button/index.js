@@ -5,8 +5,6 @@ export default function ButtonForm({ name }) {
   return (
     <>
       <button type="submit" disabled={name.length === 0}>
-        Jogar
-        {' '}
         {name}
       </button>
     </>
